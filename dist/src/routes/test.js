@@ -8,7 +8,6 @@ const express_1 = __importDefault(require("express"));
 const getTestsRoutes = (db) => {
     const router = express_1.default.Router();
     router.delete("/data", (_, res) => {
-        db.products = [];
         res.status(204);
     });
     return router;

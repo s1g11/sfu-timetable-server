@@ -10,3 +10,8 @@ export type ProductViewModel = {
     time: string
     place: string
 }
+
+export type AdminResponseModel = {
+    resCode: 0 | 1
+    error?: string
+}

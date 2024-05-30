@@ -5,7 +5,6 @@ export const getTestsRoutes = (db: DBType) => {
     const router = express.Router()
 
     router.delete("/data", (_, res) => {
-        db.products = []
         res.status(204)
     })
 
